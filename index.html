@@ -1,18 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character encoding and responsive design -->
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Page title shown in browser tab -->
-    <title>Yunuo Zhang</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="[Your academic portfolio description]">
+    <meta name="keywords" content="[research keywords, university, field]">
+    <meta name="author" content="[Your Name]">
+    
+    <!-- Page Title -->
+    <title>Your Name | Academic Portfolio</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Main heading -->
-    <h1>Yunuo Zhang</h1>
-    
-    <!-- Simple welcome message -->
-    <p>Welcome to my website.</p>
+    <!-- ==================== HEADER NAVIGATION ==================== -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <!-- Site Brand/Logo -->
+            <div class="nav-brand">
+                <a href="index.html">Your Name</a>
+            </div>
+            
+            <!-- Main Navigation Menu -->
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="pages/publications.html">Publications</a>
+                <a href="pages/projects.html">Projects</a>
+                <a href="pages/teaching.html">Teaching</a>
+                <a href="pages/cv.html">CV</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <img src="assets/images/profile.jpg" alt="Profile Photo" class="profile-photo">
+            </div>
+            <div class="hero-right">
+                <h1 class="name">Your Name</h1>
+                <p class="title">Ph.D. Candidate / Position</p>
+                <p class="institution">University Name | Department</p>
+                <p class="research-tagline">[One-line research focus/tagline]</p>
+                
+                <div class="contact-row">
+                    <a href="mailto:email@university.edu"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="#"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#"><i class="fab fa-orcid"></i> ORCID</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT GRID -->
+    <section class="main-content">
+        <div class="content-container">
+            
+            <!-- LEFT COLUMN: Recent News -->
+            <div class="content-card news-section">
+                <h2><i class="fas fa-bullhorn"></i> Recent News</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <span class="news-date">[Date]</span>
+                        <span class="news-badge">[Type]</span>
+                        <p>[News content to be filled]</p>
+                    </div>
+                    <!-- Add 4-5 more news items here -->
+                </div>
+                <a href="pages/news.html" class="see-more">View all news →</a>
+            </div>
+
+            <!-- MIDDLE COLUMN: Research Overview -->
+            <div class="content-card research-section">
+                <h2><i class="fas fa-microscope"></i> Research Overview</h2>
+                <p>[2-3 paragraphs about your research to be filled]</p>
+                
+                <h3>Research Areas</h3>
+                <div class="research-areas">
+                    <div class="area-tag">[Research Area 1]</div>
+                    <div class="area-tag">[Research Area 2]</div>
+                    <div class="area-tag">[Research Area 3]</div>
+                </div>
+                
+                <h3>Current Focus</h3>
+                <p>[Current research focus statement to be filled]</p>
+            </div>
+
+            <!-- RIGHT COLUMN: Selected Publications & Stats -->
+            <div class="content-card highlights-section">
+                <h2><i class="fas fa-star"></i> Highlights</h2>
+                
+                <h3>Selected Publications</h3>
+                <div class="pub-highlight">
+                    <div class="pub-title">[Paper Title]</div>
+                    <div class="pub-venue">[Conference/Journal Year]</div>
+                    <div class="pub-links">
+                        <a href="#">PDF</a> | <a href="#">Code</a>
+                    </div>
+                </div>
+                <!-- Add 1-2 more publication highlights -->
+                <a href="pages/publications.html" class="see-more">View all publications →</a>
+                
+                <h3>Impact</h3>
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">[#]</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">[#]</div>
+                        <div class="stat-label">Citations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NAVIGATION GRID -->
+    <section class="navigation-grid">
+        <div class="nav-container">
+            <h2 class="section-title">Explore My Work</h2>
+            
+            <div class="nav-cards-grid">
+                <!-- Publications Card -->
+                <a href="pages/publications.html" class="nav-card">
+                    <div class="nav-icon"><i class="fas fa-file-alt"></i></div>
+                    <h3>Publications</h3>
+                    <p>Peer-reviewed papers and preprints</p>
+                    <span class="nav-count">[# papers]</span>
+                </a>
+
+                <!-- Projects Card -->
+                <a href="pages/projects.html" class="nav-card">
+                    <div class="nav-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Projects</h3>
+                    <p>Research projects and code</p>
+                    <span class="nav-count">[# projects]</span>
+                </a>
+
+                <!-- Teaching Card -->
+                <a href="pages/teaching.html" class="nav-card">
+                    <div class="nav-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Teaching</h3>
+                    <p>Courses and mentoring</p>
+                    <span class="nav-count">[# courses]</span>
+                </a>
+
+                <!-- CV Card -->
+                <a href="pages/cv.html" class="nav-card">
+                    <div class="nav-icon"><i class="fas fa-file-pdf"></i></div>
+                    <h3>CV</h3>
+                    <p>Complete curriculum vitae</p>
+                    <span class="nav-download">Download PDF</span>
+                </a>
+
+                <!-- Talks Card -->
+                <a href="pages/talks.html" class="nav-card">
+                    <div class="nav-icon"><i class="fas fa-microphone"></i></div>
+                    <h3>Talks</h3>
+                    <p>Presentations and invited talks</p>
+                    <span class="nav-count">[# talks]</span>
+                </a>
+
+                <!-- Service Card -->
+                <a href="pages/service.html" class="nav-card">
+                    <div class="nav-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h3>Service</h3>
+                    <p>Academic service and reviews</p>
+                    <span class="nav-count">[# activities]</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>Last updated: [Date]</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

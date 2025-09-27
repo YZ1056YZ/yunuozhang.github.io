@@ -1,0 +1,449 @@
+/**
+ * Main CSS for Academic Portfolio
+ * Author: [Your Name]
+ * Description: Core styles for academic portfolio website
+ */
+
+/* ==================== CSS VARIABLES ==================== */
+:root {
+    --primary-color: #2c3e50;    /* Main brand color */
+    --accent-color: #3498db;      /* Links and highlights */
+    --text-color: #333;           /* Body text */
+    --bg-light: #f8f9fa;         /* Light background */
+    --border-color: #dee2e6;      /* Borders */
+    --card-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Card shadows */
+}
+
+/* ==================== GLOBAL STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* ==================== HEADER NAVIGATION ==================== */
+.main-header {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky; /* Stick to top on scroll */
+    top: 0;
+    z-index: 100;
+}
+
+/* Navigation container */
+.top-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Site brand/logo */
+.nav-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: var(--accent-color);
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background: var(--bg-light);
+    padding: 4rem 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Fixed width photo, flexible content */
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    object-fit: cover;
+    background: #ddd; /* Placeholder background */
+}
+
+/* Hero text content */
+.hero-right .name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 0.25rem;
+}
+
+.institution {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.research-tagline {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    background: white;
+    border-left: 3px solid var(--accent-color);
+}
+
+/* Social/contact links */
+.contact-row {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contact-row a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-row a:hover {
+    color: var(--accent-color);
+}
+
+/* ==================== MAIN CONTENT SECTION ==================== */
+.main-content {
+    padding: 4rem 2rem;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 2rem;
+}
+
+/* Content card styling */
+.content-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+}
+
+.content-card h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.content-card h3 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+/* ==================== NEWS SECTION STYLES ==================== */
+.news-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: #666;
+    margin-right: 1rem;
+}
+
+.news-badge {
+    background: var(--accent-color);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* ==================== RESEARCH SECTION STYLES ==================== */
+.research-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.area-tag {
+    background: var(--bg-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+}
+
+/* ==================== PUBLICATIONS STYLES ==================== */
+.pub-highlight {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 4px;
+}
+
+.pub-title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.pub-venue {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.pub-links a {
+    color: var(--accent-color);
+    margin-right: 1rem;
+}
+
+/* ==================== STATISTICS STYLES ==================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.stat {
+    text-align: center;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 4px;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* "See more" links */
+.see-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* ==================== NAVIGATION GRID SECTION ==================== */
+.navigation-grid {
+    background: var(--bg-light);
+    padding: 4rem 2rem;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Navigation cards grid */
+.nav-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 2rem;
+}
+
+/* Individual navigation card */
+.nav-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover effect for nav cards */
+.nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Navigation card icon */
+.nav-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.nav-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.nav-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Navigation count badges */
+.nav-count {
+    background: var(--bg-light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Download button style for CV */
+.nav-download {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-container p {
+    margin: 0.25rem;
+}
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+/* Tablet view */
+@media (max-width: 1024px) {
+    /* Stack content cards vertically */
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 2 columns for navigation cards */
+    .nav-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    /* Stack hero content vertically */
+    .hero-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    /* Center contact links */
+    .contact-row {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    /* Single column for navigation cards */
+    .nav-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Hide desktop menu - mobile menu would be implemented */
+    .nav-menu {
+        display: none; /* TODO: Implement mobile hamburger menu */
+    }
+}
+
+/* Mobile menu button (hidden by default) */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Mobile menu button lines */
+.mobile-menu-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Show mobile menu button on small screens */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    /* Mobile menu active state */
+    .nav-menu.active {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 1rem 0;
+    }
+    
+    .nav-menu.active a {
+        padding: 0.5rem 2rem;
+    }
+}
