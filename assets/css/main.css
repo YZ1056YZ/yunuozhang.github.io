@@ -1,6 +1,6 @@
 /**
  * Main CSS for Academic Portfolio
- * Author: [Your Name]
+ * Author: Yunuo Zhang
  * Description: Core styles for academic portfolio website
  */
 
@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'MonaspaceRadon', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
 }
