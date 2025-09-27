@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae - Yunuo Zhang">
+    <title>CV - Yunuo Zhang</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cv-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .cv-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .cv-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .cv-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .cv-btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        .cv-download {
+            background: var(--accent-color);
+            color: white;
+        }
+        .cv-download:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        .cv-print {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+        .cv-print:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        .pdf-viewer {
+            width: 100%;
+            height: 85vh;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .pdf-fallback {
+            padding: 3rem;
+            text-align: center;
+            background: var(--bg-light);
+        }
+        @media print {
+            .main-header, .cv-actions { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="nav-brand">
+                <a href="../index.html">Yunuo Zhang</a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="publications.html">Publications</a>
+                <a href="projects.html">Projects</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="cv.html" class="active">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cv-container">
+        <div class="cv-header">
+            <h1>Curriculum Vitae</h1>
+            <p>Last updated: January 2025</p>
+        </div>
+        
+        <div class="cv-actions">
+            <a href="../assets/docs/CV.pdf" download="Yunuo_Zhang_CV.pdf" class="cv-btn cv-download">
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+            <a href="../assets/docs/CV.pdf" target="_blank" class="cv-btn cv-print">
+                <i class="fas fa-external-link-alt"></i> Open in New Tab
+            </a>
+        </div>
+
+        <!-- PDF Viewer -->
+        <embed src="../assets/docs/CV.pdf" type="application/pdf" class="pdf-viewer">
+        
+        <!-- Fallback for browsers that don't support embed -->
+        <noscript>
+            <div class="pdf-fallback">
+                <p>Your browser doesn't support embedded PDFs.</p>
+                <a href="../assets/docs/CV.pdf" class="cv-btn cv-download">Download CV</a>
+            </div>
+        </noscript>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
