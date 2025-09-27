@@ -693,3 +693,171 @@ footer {
     cursor: not-allowed;
     pointer-events: none;
 }
+
+
+/* Teaching Page */
+.teaching-statement {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.teaching-category {
+    margin-bottom: 4rem;
+}
+
+.teaching-category h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Course Cards */
+.course-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.course-title h3 {
+    margin: 0 0 0.5rem 0;
+    color: #2c3e50;
+}
+
+.course-role {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.course-meta {
+    text-align: right;
+}
+
+.course-meta span {
+    display: block;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.semester {
+    font-weight: 600;
+    color: #444 !important;
+}
+
+.course-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.course-stats span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* TA Grid */
+.ta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.ta-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 3px solid var(--primary-color);
+}
+
+.ta-card h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.ta-semester {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Mentoring Section */
+.mentoring-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.stat-label {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Materials Grid */
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.material-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.material-card:hover {
+    transform: translateY(-5px);
+}
+
+.material-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
