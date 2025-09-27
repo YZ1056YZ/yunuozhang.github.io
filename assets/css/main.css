@@ -260,6 +260,92 @@ body {
     color: #666;
 }
 
+/* ==================== EDUCATION SECTION STYLES ==================== */
+.education-timeline {
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Education timeline line */
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--accent-color);
+}
+
+/* Individual education item */
+.edu-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* Timeline dot */
+.edu-item::before {
+    content: '';
+    position: absolute;
+    left: -24px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 2px solid white;
+}
+
+.edu-date {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.edu-degree {
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+}
+
+.edu-institution {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.edu-details {
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.edu-advisor,
+.edu-focus,
+.edu-gpa,
+.edu-honors {
+    color: #777;
+    font-style: italic;
+}
+
+/* Achievements section */
+.achievements-list {
+    margin-top: 1rem;
+}
+
+.achievement-item {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.achievement-item i {
+    color: var(--accent-color);
+}
+
 /* "See more" links */
 .see-more {
     display: inline-block;
