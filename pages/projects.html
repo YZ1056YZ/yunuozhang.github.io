@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Yunuo Zhang</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <a href="../index.html">Yunuo Zhang</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="projects-section">
+                <h1 class="page-title">Research Projects</h1>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="belief">Belief Representation</button>
+                    <button class="filter-btn" data-filter="planning">Planning</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                    <button class="filter-btn" data-filter="applied">Applied</button>
+                </div>
+
+                <div class="projects-grid">
+                    
+                    <!-- ESCORT Framework -->
+                    <div class="project-card" data-category="belief">
+                        <div class="project-header">
+                            <h3>ESCORT Framework</h3>
+                            <span class="project-status active">Active</span>
+                        </div>
+                        <p class="project-description">
+                            Efficient Stein-variational and Sliced Consistency-Optimized Temporal belief Representation for POMDPs. 
+                            A particle-based framework for capturing complex, multi-modal distributions in high-dimensional belief spaces.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Key Contributions:</h4>
+                            <ul>
+                                <li>Correlation-aware projections modeling state dependencies</li>
+                                <li>Temporal consistency constraints for stable updates</li>
+                                <li>Superior performance on multi-modal distributions</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#escort-2025" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                            <a href="#" class="btn-link disabled">
+                                <i class="fab fa-github"></i> Code (Coming Soon)
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NS-Gym -->
+                    <div class="project-card featured" data-category="tools">
+                        <div class="featured-badge">Open Source</div>
+                        <div class="project-header">
+                            <h3>NS-Gym</h3>
+                            <span class="project-status active">Active</span>
+                        </div>
+                        <p class="project-description">
+                            First simulation toolkit designed explicitly for non-stationary MDPs, integrated with OpenAI Gymnasium. 
+                            Provides standardized benchmarks and environments for testing adaptive algorithms.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Features:</h4>
+                            <ul>
+                                <li>Modular environment parameter evolution</li>
+                                <li>6+ benchmark environments</li>
+                                <li>Compatible with standard RL algorithms</li>
+                                <li>Comprehensive evaluation metrics</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#nsgym-2025" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                            <a href="https://github.com/scope-lab-vu/ns_gym" class="btn-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn-link">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Shrinking POMCP -->
+                    <div class="project-card" data-category="planning belief">
+                        <div class="project-header">
+                            <h3>Shrinking POMCP</h3>
+                            <span class="project-status active">Active</span>
+                        </div>
+                        <p class="project-description">
+                            Real-time UAV search and rescue framework combining advanced simulation with novel POMDP planning. 
+                            Addresses time constraints by guiding agents toward non-sparse belief regions.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Applications:</h4>
+                            <ul>
+                                <li>UAV search and rescue operations</li>
+                                <li>3D AirSim-ROS2 integration</li>
+                                <li>Neuro-symbolic navigation</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#shrinking-2024" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                            <a href="#" class="btn-link">
+                                <i class="fas fa-video"></i> Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- AIROAS -->
+                    <div class="project-card" data-category="belief">
+                        <div class="project-header">
+                            <h3>AIROAS</h3>
+                            <span class="project-status active">Active</span>
+                        </div>
+                        <p class="project-description">
+                            Annealed Importance Resampling for Observation Adaptation Search. Addresses particle degeneracy 
+                            and sample impoverishment in POMDP belief updating.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Innovations:</h4>
+                            <ul>
+                                <li>Sigmoid-based tempering for tree search</li>
+                                <li>Target inefficiency ratio mechanism</li>
+                                <li>Superior performance in highly observable settings</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#airoas-2025" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- V2B Optimization -->
+                    <div class="project-card" data-category="applied planning">
+                        <div class="project-header">
+                            <h3>Vehicle-to-Building Optimization</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Online decision-making system for V2B energy management using Monte Carlo Tree Search. 
+                            Deployed with Nissan Advanced Technology Center.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Impact:</h4>
+                            <ul>
+                                <li>30% reduction in peak power demand</li>
+                                <li>Real-world EV testbed validation</li>
+                                <li>Handles heterogeneous charger configurations</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#v2b-2025" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                            <a href="#" class="btn-link">
+                                <i class="fas fa-chart-line"></i> Results
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- I-TAP -->
+                    <div class="project-card" data-category="belief planning">
+                        <div class="project-header">
+                            <h3>I-TAP</h3>
+                            <span class="project-status active">Active</span>
+                        </div>
+                        <p class="project-description">
+                            In-Context Latent Temporal Abstraction Planner combining in-context adaptation with 
+                            online planning in learned temporal abstraction spaces.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Benchmarks:</h4>
+                            <ul>
+                                <li>MuJoCo locomotion tasks</li>
+                                <li>High-dimensional Adroit manipulation</li>
+                                <li>Effective under partial observability</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#itap-2026" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PA-MCTS -->
+                    <div class="project-card" data-category="planning applied">
+                        <div class="project-header">
+                            <h3>PA-MCTS</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Policy-Augmented Monte Carlo Tree Search for non-stationary environments. Combines 
+                            offline learning with online search for robust decision-making.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Results:</h4>
+                            <ul>
+                                <li>Outperforms AlphaZero in non-stationary settings</li>
+                                <li>Theoretical convergence guarantees</li>
+                                <li>Validated on OpenAI Gym environments</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#pamcts-2023" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ADA-MCTS -->
+                    <div class="project-card" data-category="planning">
+                        <div class="project-header">
+                            <h3>Adaptive MCTS</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            Adaptive Monte Carlo Tree Search that learns updated dynamics while maintaining 
+                            safe exploration through dual-phase sampling strategies.
+                        </p>
+                        <div class="project-highlights">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Bayesian uncertainty quantification</li>
+                                <li>Risk-averse exploration</li>
+                                <li>Online adaptation to environment changes</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="publications.html#adamcts-2024" class="btn-link">
+                                <i class="fas fa-file-alt"></i> Paper
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Yunuo Zhang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Project filtering
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.dataset.filter;
+                
+                // Update active button
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter projects
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category.includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
