@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publications by Yunuo Zhang - Research papers on belief representation, POMDPs, and adaptive decision-making">
+    <title>Publications | Yunuo Zhang</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .publications-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .page-header .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        
+        .publication-section {
+            margin-bottom: 4rem;
+        }
+        
+        .section-header {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .section-header h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-description {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .publication-item {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: box-shadow 0.3s;
+        }
+        
+        .publication-item:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .pub-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+        
+        .pub-venue {
+            color: var(--accent-color);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .pub-summary {
+            background: var(--bg-light);
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .pub-citation {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+            margin-top: 1rem;
+            font-family: 'Courier New', monospace;
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        
+        .pub-links {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .pub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid var(--accent-color);
+            border-radius: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+        
+        .pub-link:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        .stats-banner {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="main-header">
+        <nav class="top-nav">
+            <div class="nav-brand">
+                <a href="../index.html">Yunuo Zhang</a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html">Home</a>
+                <a href="publications.html" class="active">Publications</a>
+                <a href="projects.html">Projects</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="publications-container">
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Publications</h1>
+            <p class="subtitle">Advancing belief representation and decision-making under uncertainty</p>
+        </div>
+
+        <!-- Statistics Banner -->
+        <div class="stats-banner">
+            <h3>Publication Overview</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">Total Papers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">NeurIPS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">AAMAS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">First Author</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Algorithmic Innovations Section -->
+        <div class="publication-section">
+            <div class="section-header">
+                <h2>Algorithmic Innovations in Sequential Decision-Making</h2>
+                <p class="section-description">Core theoretical contributions advancing belief representation, particle-based methods, and adaptive planning algorithms for POMDPs and non-stationary environments.</p>
+            </div>
+
+            <!-- ESCORT -->
+            <div class="publication-item">
+                <div class="pub-title">ESCORT: Efficient Stein-variational and Sliced Consistency-Optimized Temporal Belief Representation for POMDPs</div>
+                <div class="pub-venue">Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Develops particle-based belief representation using Stein-variational methods with correlation-aware projections to accurately model multi-modal distributions in POMDPs.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Zhang, Y., Luo, B., Mukhopadhyay, A., Karsai, G., & Dubey, A. (2025). ESCORT: Efficient Stein-variational and Sliced Consistency-Optimized Temporal Belief Representation for POMDPs. In Proceedings of NeurIPS 2025.
+                </div>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                    <a href="https://github.com/YZ1056YZ" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <!-- AIROAS -->
+            <div class="publication-item">
+                <div class="pub-title">Observation Adaptation via Annealed Importance Resampling for Partially Observable Markov Decision Processes</div>
+                <div class="pub-venue">Proceedings of the 35th International Conference on Automated Planning and Scheduling (ICAPS), 2025 - Oral Presentation</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Proposes annealed importance resampling to address particle degeneracy in online POMDP solvers when observations are highly informative, improving belief approximation accuracy.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Zhang, Y., Luo, B., Mukhopadhyay, A., & Dubey, A. (2025). Observation Adaptation via Annealed Importance Resampling for Partially Observable Markov Decision Processes. In Proceedings of ICAPS 2025. AAAI Press.
+                </div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2503.19302" class="pub-link"><i class="fas fa-external-link-alt"></i> arXiv</a>
+                </div>
+            </div>
+
+            <!-- I-TAP -->
+            <div class="publication-item">
+                <div class="pub-title">In-Context Planning with Latent Temporal Abstractions</div>
+                <div class="pub-venue">Under review at the Fourteenth International Conference on Learning Representations (ICLR 2026)</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Unifies in-context adaptation and online planning in learned latent temporal-abstraction space, enabling efficient decision-making under stochastic dynamics and partial observability.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Luo, B., Zhang, Y., Keplinger, N.S., Gupta, S., Dubey, A., & Mukhopadhyay, A. (2025). In-Context Planning with Latent Temporal Abstractions. Under review at ICLR 2026.
+                </div>
+            </div>
+
+            <!-- ADA-MCTS -->
+            <div class="publication-item">
+                <div class="pub-title">Act as You Learn: Adaptive Decision-Making in Non-Stationary Markov Decision Processes</div>
+                <div class="pub-venue">Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2024</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Introduces ADA-MCTS algorithm that adaptively balances pessimistic and optimistic planning based on epistemic and aleatoric uncertainty estimates in non-stationary environments.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Luo, B., Zhang, Y., Dubey, A., & Mukhopadhyay, A. (2024). Act as You Learn: Adaptive Decision-Making in Non-Stationary Markov Decision Processes. In Proceedings of AAMAS 2024 (pp. 1301-1309).
+                </div>
+            </div>
+
+            <!-- PA-MCTS -->
+            <div class="publication-item">
+                <div class="pub-title">Decision Making in Non-Stationary Environments with Policy-Augmented Search</div>
+                <div class="pub-venue">Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2024</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Introduces PA-MCTS algorithm that combines stale policy knowledge with online Monte Carlo tree search to handle non-stationary environments where relearning optimal policies is computationally expensive.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Pettet, A., Zhang, Y., Luo, B., Wray, K., Baier, H., Laszka, A., Dubey, A., & Mukhopadhyay, A. (2024). Decision Making in Non-Stationary Environments with Policy-Augmented Search. In Proceedings of AAMAS 2024 (pp. 2417-2419).
+                </div>
+            </div>
+        </div>
+
+        <!-- Real-World Applications Section -->
+        <div class="publication-section">
+            <div class="section-header">
+                <h2>Real-World Applications & Benchmarks</h2>
+                <p class="section-description">Practical deployments and standardized toolkits enabling reproducible research in autonomous systems, energy optimization, and emergency response.</p>
+            </div>
+
+            <!-- NS-Gym -->
+            <div class="publication-item">
+                <div class="pub-title">NS-Gym: Open-Source Simulation Environments and Benchmarks for Non-Stationary Markov Decision Processes</div>
+                <div class="pub-venue">Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track, 2025</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Presents first standardized toolkit for non-stationary MDPs integrated with Gymnasium framework, enabling reproducible evaluation of algorithms under changing environmental conditions.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Keplinger, N.S., Luo, B., Bektas, I., Zhang, Y., Wray, K.H., Laszka, A., Dubey, A., & Mukhopadhyay, A. (2025). NS-Gym: Open-Source Simulation Environments and Benchmarks for Non-Stationary Markov Decision Processes. In Proceedings of NeurIPS 2025, Datasets and Benchmarks Track.
+                </div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2501.09646" class="pub-link"><i class="fas fa-external-link-alt"></i> arXiv</a>
+                    <a href="https://github.com/scope-lab-vu/ns_gym" class="pub-link"><i class="fab fa-github"></i> Code</a>
+                </div>
+            </div>
+
+            <!-- V2B -->
+            <div class="publication-item">
+                <div class="pub-title">Online Decision-Making Under Uncertainty for Vehicle-to-Building Systems</div>
+                <div class="pub-venue">Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS), 2025</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Models vehicle-to-building energy optimization as an MDP and uses domain-guided Monte Carlo tree search to handle heterogeneous chargers and demand charges over long planning horizons.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Sen, R., Zhang, Y., Liu, F., Talusan, J.P., Pettet, A., Suzue, Y., Mukhopadhyay, A., & Dubey, A. (2025). Online Decision-Making Under Uncertainty for Vehicle-to-Building Systems. In Proceedings of ICCPS 2025.
+                </div>
+            </div>
+
+            <!-- Book Chapter -->
+            <div class="publication-item">
+                <div class="pub-title">Neuro-symbolic AI: Foundations and Applications (Book Chapter)</div>
+                <div class="pub-venue">Wiley-IEEE Press, 2025</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Contributed Chapter 4 on neuro-symbolic approaches for UAV navigation and search planning in urban rescue operations.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Velasquez, A., Song, H., Ravikumar, P., Sastry, S.S., & Neema, S. (Eds.). (2025). Neuro-symbolic AI: Foundations and Applications. Wiley-IEEE Press. ISBN: 978-1-394-30237-6.
+                </div>
+                <div class="pub-links">
+                    <a href="https://www.wiley.com/en-us/Neuro-symbolic+AI%3A+Foundations+and+Applications-p-9781394302376" class="pub-link"><i class="fas fa-book"></i> Publisher</a>
+                </div>
+            </div>
+
+            <!-- Shrinking POMCP -->
+            <div class="publication-item">
+                <div class="pub-title">Shrinking POMCP: A Framework for Real-Time UAV Search and Rescue</div>
+                <div class="pub-venue">2024 International Conference on Assured Autonomy (ICAA), 2024</div>
+                <div class="pub-summary">
+                    <strong>Summary:</strong> Presents Shrinking POMCP that reduces computational complexity in UAV search and rescue by dynamically guiding exploration toward non-sparse belief regions.
+                </div>
+                <div class="pub-citation">
+                    <strong>Citation:</strong> Zhang, Y., Luo, B., Mukhopadhyay, A., Stojcsics, D., Elenius, D., Roy, A., Jha, S., Maroti, M., Koutsoukos, X., Karsai, G., & Dubey, A. (2024). Shrinking POMCP: A Framework for Real-Time UAV Search and Rescue. In Proceedings of ICAA 2024 (pp. 48-57).
+                </div>
+                <div class="pub-links">
+                    <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Yunuo Zhang. All rights reserved.</p>
+            <p>Last updated: September 2025</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
