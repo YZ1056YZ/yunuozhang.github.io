@@ -140,9 +140,15 @@
             text-align: center;
         }
         
+        .stats-banner h3 {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
         .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 2rem;
             margin-top: 1.5rem;
         }
@@ -154,11 +160,14 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.9;
+            font-size: 1rem;
+            font-weight: 500;
+            opacity: 1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
     </style>
 </head>
@@ -194,11 +203,15 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-number">9</div>
-                    <div class="stat-label">Total Papers</div>
+                    <div class="stat-label">Publications</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">3</div>
+                    <div class="stat-number">2</div>
                     <div class="stat-label">NeurIPS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">ICAPS</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">2</div>
