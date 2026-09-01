@@ -195,6 +195,15 @@ body {
     text-transform: uppercase;
 }
 
+/* Badge variants by type */
+.news-badge.badge-service {
+    background: #6741d9;  /* purple */
+}
+
+.news-badge.badge-experience {
+    background: #2f9e44;  /* green */
+}
+
 /* ==================== RESEARCH SECTION STYLES ==================== */
 .research-areas {
     display: flex;
